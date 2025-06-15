@@ -31,7 +31,7 @@ else {
                 pondScript.setText(getText()) = function (dialogue) { 
                     section = document.getElementById('toSend') ;
                     section.innerHtml = 'How did it go? As a warning, I will be receiving your response.'
-                    textScript = pondScript.createElement('textbox') ;
+                    textScript = pondScript.createElement('input') ;
                     section.innerHtml.append(textScript) ;
                     .then(response => sendEmail()) ;
                       function sendEmail() {
