@@ -29,11 +29,11 @@ else {
             pondscript.onclick = function quote () {
                 "blach blach "
                 pondScript.setText(getText()) = function (dialogue) { 
-                    section = pondScript.createElement('section') ;
+                    section = document.getElementById('toSend') ;
                     section.innerHtml = 'How did it go? As a warning, I will be receiving your response.'
                     textScript = pondScript.createElement('textbox') ;
                     section.innerHtml.append(textScript) ;
-                    .then(response => response.json())
+                    .then(response => sendEmail()) ;
                       function sendEmail() {
                           const emailData = {
                                 to: 'amierasdocs@gmail.com',
