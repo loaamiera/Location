@@ -1,0 +1,126 @@
+@media screen and ( max-width: 600px) { 
+    html{
+        background-color: lightblue;
+    }
+    header{
+        display: inline-flex;
+        flex-direction: column ;
+        vertical-align: middle;
+        text-align: center ;
+        margin: auto ;
+        max-width: 600px ;
+    }
+    main{
+        max-width: 600px ;
+        color: #9966FF ;
+    }
+    h1{
+        max-width: 600px ;
+        color: #666666 ; 
+    }
+    body{
+        display: inline-flex;
+        flex-direction: column ;
+    }
+    .colin{
+        font-size: 50em ;
+    }
+    .clear{
+        clear: both ;
+    }
+
+    a{
+        text-decoration: none ;
+        font-style: none ;
+    }
+
+    input{
+        overflow: scroll ;
+        box-sizing: border-box; 
+        width: 100px ;
+        height: 75px ;
+    }
+      footer{
+        display: inline-flex ;
+        max-width: 300px ;
+        margin: auto ;
+        text-align: center ;
+        color: white ;
+        background-color: #333333 ;
+        .foot{
+            padding-top: 10%;
+        }
+
+    }
+
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+      html{
+        background-color: lightblue
+
+    }
+    h1, h2, h3{
+        margin-top: 2%;
+        text-align: center ;
+        vertical-align: top;
+        justify-content: top;
+        float: center;
+        justify-content: center;
+        max-width: 1000px ;
+    }
+    header{
+        display: inline-flex;
+        vertical-align: middle;
+        text-align: center ;
+        min-width: 600px ;
+        max-width: 1000px ;
+    }
+    main{
+        min-width: 600px ;
+        max-width: 1000px ;
+        color: #9966FF ;
+    }
+    body a:link {color: #9966FF ;}
+    body a:visited {color: #666666 ;}
+    body a:hover { color: #9966FF ;
+                inset: #333333 ; }
+    .colin{
+        font-size: 50em ;
+    }
+    .clear{
+        clear: both ;
+    }
+
+    a{
+        text-decoration: none ;
+        font-style: none ;
+    }
+
+    input{
+      overflow: scroll ;
+      box-sizing: border-box; 
+      width: 150px ;
+      height: 100px ;
+    }
+      footer{
+        max-width: 600px ;
+        padding-top: 2% ;
+        margin: auto ;
+        text-align: center ;
+        background-color: #333333 ;
+        .foot{
+            padding: 10%;
+        }
+        color: white ;
+
+    }
+}
+
+
+
+
+
+
+
