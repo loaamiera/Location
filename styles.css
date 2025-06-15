@@ -21,12 +21,13 @@
     body{
         display: inline-flex;
         flex-direction: column ;
+        text-align: center ;
+        margin: auto ;
+        main{
+            min-height: 250px ; }
     }
     .colin{
         font-size: 50em ;
-    }
-    .clear{
-        clear: both ;
     }
 
     a{
@@ -42,13 +43,15 @@
     }
       footer{
         display: inline-flex ;
-        max-width: 300px ;
+        max-width: 400px ;
         margin: auto ;
         text-align: center ;
         color: white ;
         background-color: #333333 ;
+        padding: 5px ;
         .foot{
             padding-top: 10%;
+            clear: both ;
         }
 
     }
@@ -89,9 +92,6 @@
     .colin{
         font-size: 50em ;
     }
-    .clear{
-        clear: both ;
-    }
 
     a{
         text-decoration: none ;
@@ -110,10 +110,12 @@
         margin: auto ;
         text-align: center ;
         background-color: #333333 ;
+        clear: both ;
+        color: white ;
         .foot{
             padding: 10%;
         }
-        color: white ;
+
 
     }
 }
