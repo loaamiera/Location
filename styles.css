@@ -21,8 +21,14 @@
         margin: auto ;
         main{
             min-height: 250px ; 
-            max-height: 600px ;
-            color: #9966FF ;}
+            max-height: 400px ;
+            color: #9966FF ;
+            #Location{
+                background-color: white ;
+                text-align: center ;
+            }
+            #toSend{
+                font-style: bold ;
     }
     .colin{
         font-size: 50em ;
