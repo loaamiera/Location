@@ -2,7 +2,7 @@
 import java.awt ;
 
 var locScript = document.getElementById("Location");
-
+document.addEventListener('DOMContentLoaded', () => {
 locScript.onclick = function Check() {
   if (navigator.geolocation) {
   var userLoc = navigator.geolocation.getCurrentPosition(Location);
@@ -46,12 +46,13 @@ else {
                         body: JSON.stringify(emailData)
                         }).then(response => response.json())
                         .then(data => console.log(data));
-}
+                                                          } ;
             
             } ;
 
             } ;
         } ;
+ } ;
 
 
-        } ;
+} 
