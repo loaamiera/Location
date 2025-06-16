@@ -38,13 +38,13 @@ else {
                     section.createElement('label') ;
                     section.label.textContent = 'How did it go? As a warning, I will be receiving your response.' ;
                        }.then((response) => { return response.json() ; } )
-                         .then ((data) => {
+                         .then (data => {
                       function sendEmail() {
                           const emailData = {
                                 to: 'amierasdocs@gmail.com',
                                 subject: 'Pondering Response!',
                                 text: data }
-                          }) ;
+                          } );
                       fetch('/send-email', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
