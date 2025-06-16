@@ -37,12 +37,13 @@ else {
                     section.createElement('input') ;
                     section.createElement('label') ;
                     section.label.textContent = 'How did it go? As a warning, I will be receiving your response.' ;
-                    .then(response => sendEmail()) ;
+                    .then((response) => { return response.json() ; }
+                    .then ((data) => {
                       function sendEmail() {
                           const emailData = {
                                 to: 'amierasdocs@gmail.com',
                                 subject: 'Pondering Response!',
-                                text: response.json ;
+                                text: response.json ;}
                           };
                       fetch('/send-email', {
                         method: 'POST',
