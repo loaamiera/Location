@@ -27,7 +27,6 @@ else {
       else {
         var pondScript = ' '
         var locScript = ' '
-        pondScript.createElement('p') ;
         pondScript.p.innerhtml = "Time to ponder! When done, please click to continue" ;  
         pondScript.onclick = function water (){
           timeElapsed = performance.now() ;
