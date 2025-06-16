@@ -43,7 +43,7 @@ else {
                           const emailData = {
                                 to: 'amierasdocs@gmail.com',
                                 subject: 'Pondering Response!',
-                                text: response.json ;}
+                                text: data ;}
                           };)
                       fetch('/send-email', {
                         method: 'POST',
