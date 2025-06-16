@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', 
+
 var locScript = document.getElementById("Location");
 locScript.onclick = function Check() {
   if (navigator.geolocation) {
@@ -56,4 +56,4 @@ else {
         } ;
 
 
-} } ; )
+} } ; 
