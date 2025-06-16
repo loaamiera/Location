@@ -51,7 +51,7 @@ else {
                         body: JSON.stringify(emailData)
                         }).then(response => response.json())
                         .then(data => console.log(data));
-                                                          } ; )
+                                                          }  )
             
 
             } ;
