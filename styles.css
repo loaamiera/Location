@@ -29,11 +29,8 @@
                 min-width: 50% ;
                 text-align: center ;
             }
-            #toSend{
+             #toSend{
                 font-style: bold ;
-    }
-    .colin{
-        font-size: 50em ;
     }
 
     a{
@@ -90,6 +87,15 @@
         min-width: 600px ;
         max-width: 1000px ;
         color: #9966FF ;
+        #Location{
+                background-color: white ;
+                min-height: 50% ;
+                min-width: 50% ;
+                text-align: center ;
+            } ;
+        #toSend{
+                font-style: bold ;
+    } ;
     }
     body a:link {color: #9966FF ;}
     body a:visited {color: #666666 ;}
