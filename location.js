@@ -11,17 +11,20 @@ else {
   "Please make sure that your location services are turned on.";
    var userLoc = navigator.geolocation.watchPosition(Check) ;
 } ;
-} ;
-
+}
  start = function Location(position) {
     var Latitude = position.coords.latitude;
     var Longitude = position.coords.longitude;
    locScript.textContent = ''
-    if(Latitude != 48.729321 OR Longitude != -122.485973) {
+    if(Latitude != 48.729321) {
         locScript.innerhtml = "Someone's not at the Fairhaven pond! Please make you're already there before you click to continue." ;
         var userLoc = navigator.geolocation.watchPosition(Check) ;
     } 
-    else {
+   else{
+     if (Longitude != -122.485973) {
+        locScript.innerhtml = "Someone's not at the Fairhaven pond! Please make you're already there before you click to continue." ;
+        var userLoc = navigator.geolocation.watchPosition(Check) ;
+      else {
         var pondScript = ' '
         var locScript = ' '
         pondScript.createElement('p') ;
@@ -59,4 +62,4 @@ else {
  } ;
 
 
-} 
+} }
