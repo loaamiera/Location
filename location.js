@@ -21,7 +21,7 @@ else {
    else{
      if (Longitude != -122.485973) {
         locScript.innerhtml = "Someone's not at the Fairhaven pond! Please make you're already there before you click to continue." ;
-        var userLoc = navigator.geolocation.watchPosition(Check) ;
+        var userLoc = navigator.geolocation.watchPosition(Check) ; }
       else {
         locScript.innerhtml = "Time to ponder! When done, please click to continue" ;  
         locScript.onclick = function water (){
