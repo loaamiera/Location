@@ -44,14 +44,14 @@ else {
                                 to: 'amierasdocs@gmail.com',
                                 subject: 'Pondering Response!',
                                 text: data }
-                          } )
+                          } 
                       fetch('/send-email', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(emailData)
                         }).then(response => response.json())
                         .then(data => console.log(data));
-                                                          } ;
+                                                          } ; )
             
 
             } ;
