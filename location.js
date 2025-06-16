@@ -27,14 +27,16 @@ else {
         locScript.onclick = function water (){
           timeElapsed = performance.now() ;
             locScript.innerhtml = 'Look at the water as you breathe. When calm, please click to continue.' ;
-            locScript.onclick = if (timeElapsed < 120000 ) {
-            locScript.innerhtml = '' ;
-            locScript.innerhtml = 'Someones in a hurry. Take a few minutes to think!' ;
+            locScript.onclick = function pondTime() {
+              if (timeElapsed < 120000 ) {
+              locScript.innerhtml = '' ;
+              locScript.innerhtml = 'Someones in a hurry. Take a few minutes to think!' ;
             }
            else { nextPart = function (dialogue) { 
                     section = document.getElementById('toSend') ;
                     section.createElement('input') ;
-                    section.input.innerHtml = 'How did it go? As a warning, I will be receiving your response.'
+                    section.createElement('label') ;
+                    section.label.textContent = 'How did it go? As a warning, I will be receiving your response.' ;
                     .then(response => sendEmail()) ;
                       function sendEmail() {
                           const emailData = {
