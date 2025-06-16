@@ -37,8 +37,8 @@ else {
                     section.createElement('input') ;
                     section.createElement('label') ;
                     section.label.textContent = 'How did it go? As a warning, I will be receiving your response.' ;
-                    .then((response) => { return response.json() ; }
-                    .then ((data) => {
+                       }.then((response) => { return response.json() ; }
+                         .then ((data) => {
                       function sendEmail() {
                           const emailData = {
                                 to: 'amierasdocs@gmail.com',
@@ -53,7 +53,6 @@ else {
                         .then(data => console.log(data));
                                                           } ;
             
-            } ;
 
             } ;
         } ;
