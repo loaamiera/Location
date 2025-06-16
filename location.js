@@ -29,8 +29,6 @@ function checkLocation(position) {
        locScript.innerHTML = "Someone's in a hurry! Look at the water as you breathe. When fully calm, click to continue "; }
     else {
       var section = document.getElementById("toSend");
-      locScript.innerHTML = 
-
         var entryLabel = document.createElement("label");
         entryLabel.textContent = "So, how was it? Just to warn you I will be receiving your response.";
         section.appendChild(entryLabel);
