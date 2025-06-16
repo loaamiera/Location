@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', 
 var locScript = document.getElementById("Location");
 locScript.onclick = function Check() {
   if (navigator.geolocation) {
@@ -10,8 +10,8 @@ else {
   locScript.textContent =
   "Please make sure that your location services are turned on.";
    var userLoc = navigator.geolocation.watchPosition(Check) ;
+} 
 } ;
-}
  start = function Location(position) {
     var Latitude = position.coords.latitude;
     var Longitude = position.coords.longitude;
@@ -35,7 +35,7 @@ else {
             pondScript.p.innerhtml = '' ;
             pondScript.p.innerhtml = 'Someones in a hurry. Take a few minutes to think!' ;
             }
-           else { nextPart = unction (dialogue) { 
+           else { nextPart = function (dialogue) { 
                     section = document.getElementById('toSend') ;
                     section.createElement('input') ;
                     section.input.innerHtml = 'How did it go? As a warning, I will be receiving your response.'
@@ -58,7 +58,6 @@ else {
 
             } ;
         } ;
- } ;
 
 
-} }
+} } ; )
