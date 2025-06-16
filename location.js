@@ -1,6 +1,5 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-import java.awt ;
 var locScript = document.getElementById("Location");
 locScript.onclick = function Check() {
   if (navigator.geolocation) {
