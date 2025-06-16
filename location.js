@@ -6,8 +6,7 @@ locScript.onclick = function Check() {
   var userLoc = navigator.geolocation.getCurrentPosition(Location);
 } 
 else {
-  locScript.textContent = ''
-  locScript.textContent =
+  locScript.innerhtml =
   "Please make sure that your location services are turned on.";
    var userLoc = navigator.geolocation.watchPosition(Check) ;
 } 
@@ -15,7 +14,6 @@ else {
  start = function Location(position) {
     var Latitude = position.coords.latitude;
     var Longitude = position.coords.longitude;
-   locScript.textContent = ''
     if(Latitude != 48.729321) {
         locScript.innerhtml = "Someone's not at the Fairhaven pond! Please make you're already there before you click to continue." ;
         var userLoc = navigator.geolocation.watchPosition(Check) ;
@@ -25,15 +23,13 @@ else {
         locScript.innerhtml = "Someone's not at the Fairhaven pond! Please make you're already there before you click to continue." ;
         var userLoc = navigator.geolocation.watchPosition(Check) ;
       else {
-        var pondScript = ' '
-        var locScript = ' '
-        pondScript.p.innerhtml = "Time to ponder! When done, please click to continue" ;  
-        pondScript.onclick = function water (){
+        locScript.innerhtml = "Time to ponder! When done, please click to continue" ;  
+        locScript.onclick = function water (){
           timeElapsed = performance.now() ;
-            pondScript.p.innerhtml = 'Look at the water as you breathe. When calm, please click to continue.' ;
-            pondscript.onclick = if (timeElapsed < 120000 ) {
-            pondScript.p.innerhtml = '' ;
-            pondScript.p.innerhtml = 'Someones in a hurry. Take a few minutes to think!' ;
+            locScript.innerhtml = 'Look at the water as you breathe. When calm, please click to continue.' ;
+            locScript.onclick = if (timeElapsed < 120000 ) {
+            locScript.innerhtml = '' ;
+            locScript.innerhtml = 'Someones in a hurry. Take a few minutes to think!' ;
             }
            else { nextPart = function (dialogue) { 
                     section = document.getElementById('toSend') ;
