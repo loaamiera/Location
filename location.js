@@ -15,7 +15,7 @@ function checkLocation(position) {
   const idealLongitude = -122.485973;
 
   if (latitude != targetLat || longitude != idealLong) {
-    locScript.innerHTML = Looks like someones not at the Fairhaven dorm pond!";
+    locScript.innerHTML = "Looks like someones not at the Fairhaven dorm pond!";
     navigator.geolocation.watchPosition(checkLocation);
     return;
   }
