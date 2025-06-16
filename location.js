@@ -10,9 +10,9 @@ locScript.onclick = function checkLocation() {
 };
 
 function checkLocation(position) {
-  const { latitude, longitude } = position.coords;
-  const idealLatitude = 48.729321;
-  const idealLongitude = -122.485973;
+  var { latitude, longitude } = position.coords;
+  var idealLatitude = 48.729321;
+  var idealLongitude = -122.485973;
 
   if (latitude != targetLat || longitude != idealLong) {
     locScript.innerHTML = "Looks like someones not at the Fairhaven dorm pond!";
@@ -24,16 +24,16 @@ function checkLocation(position) {
     var startTime = Date.now();
     locScript.innerHTML = "Time to ponder! When done, click to continue.";
     locScript.onclick = function water() {
-    const timeElapsed = Date.now() - startTime;
+    var timeElapsed = Date.now() - startTime;
     if (timeElapsed < 120000) {
        locScript.innerHTML = "Someone's in a hurry! Look at the water as you breathe. When fully calm, click to continue "; }
     else {
       var section = document.getElementById("toSend");
       locScript.innerHTML = 
 
-        var label = document.createElement("label");
-        label.textContent = "So, how was it? Just to warn you I will be receiving your response.";
-        section.appendChild(label);
+        var entryLabel = document.createElement("label");
+        entryLabel.textContent = "So, how was it? Just to warn you I will be receiving your response.";
+        section.appendChild(entryLabel);
         var input = document.createElement("input");
         input.type = "text";
         section.appendChild(input);
