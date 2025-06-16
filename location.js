@@ -44,7 +44,7 @@ else {
                                 to: 'amierasdocs@gmail.com',
                                 subject: 'Pondering Response!',
                                 text: data }
-                          } );
+                          } )
                       fetch('/send-email', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
